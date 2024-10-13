@@ -1,0 +1,21 @@
+// Raising Bacteria | Codeforces 579A
+// Bitwise Operations and Bitmasks
+// Solved by Utpal Sen
+// 12/10/2024
+
+#include <iostream>
+    using namespace std;
+
+int main()
+{
+    int days;
+    cin >> days;
+    int count = 0;
+    while (days > 0)
+    {
+        count += (days & 1);
+        days >>= 1;
+    }
+    cout << count << endl;
+    return 0;
+}
