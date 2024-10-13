@@ -1,0 +1,15 @@
+// Maximizing Xor | HackerRank
+// https://www.hackerrank.com/challenges/maximizing-xor/problem
+// Bitwise Operations and Bitmasks
+// Solved by Utpal Sen
+// 13/09/2024
+
+int maximizingXor(int l, int r) {
+    int xor_val = l ^ r;
+    int significant_bit = 1;
+    while (xor_val > 0) {
+        significant_bit <<= 1;  
+        xor_val >>= 1;        
+    }
+    return significant_bit - 1;  
+}
