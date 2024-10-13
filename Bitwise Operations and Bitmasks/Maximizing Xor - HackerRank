@@ -4,6 +4,7 @@
 // Solved by Utpal Sen
 // 13/09/2024
 
+
 int maximizingXor(int l, int r) {
     int xor_val = l ^ r;
     int significant_bit = 1;
